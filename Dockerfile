@@ -4,7 +4,7 @@ FROM tomcat:9.0-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copia tu archivo WAR como la app principal
-COPY CitasMedicasWeb.war /usr/local/tomcat/webapps/ROOT.war
+COPY citasmedicas.war /usr/local/tomcat/webapps/ROOT.war
 
 # Define el puerto (Render usará este valor automáticamente)
 ENV PORT=8080

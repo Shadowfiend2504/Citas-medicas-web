@@ -1,0 +1,9 @@
+FROM tomcat:9.0
+
+# Elimina la aplicación por defecto
+RUN rm -rf /usr/local/tomcat/webapps/ROOT
+
+# Copia tu archivo WAR al contenedor
+COPY citasMedicas.war /usr/local/tomcat/webapps/ROOT.war
+
+EXPOSE 8080
